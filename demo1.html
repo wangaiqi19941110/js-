@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>闭包</title>
+	</head>
+	<body>
+		<script>
+			function pare() {
+				var name = 'wangaiqi';
+				return function child() {
+					console.log(name);
+				}
+			}
+			pare()();
+			//var A = pare();
+			//A();
+		</script>
+	</body>
+</html>
